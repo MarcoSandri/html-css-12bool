@@ -1,0 +1,55 @@
+:root {
+    --unit: 1.8vw;
+    --side: calc(var(--unit) * 24 + var(--unit));
+}
+
+body {
+    background-color: #000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.border {
+    border: var(--unit) solid #fff;
+}
+
+.field {
+    height: var(--side);
+    width: var(--side);
+    float: left;
+}
+
+
+.division-line {
+    float: left;
+    width: var(--unit);
+    height: var(--side);
+}
+
+.row {
+    height: var(--unit);
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.quarter {
+    float: left;
+    height: calc(var(--side) / 2);
+    width: calc(var(--side) / 2);
+}
