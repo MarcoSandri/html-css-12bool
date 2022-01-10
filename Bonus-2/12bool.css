@@ -19,6 +19,7 @@
     flex-wrap: wrap;
 }
 
+/* Allineamenti main axis */
 .justify-start {
     justify-content: flex-start;
 }
@@ -39,6 +40,7 @@
     justify-content: space-between;
 }
 
+/* Allineamenti cross axis */
 .self-top {
     align-self: flex-start;
 }
