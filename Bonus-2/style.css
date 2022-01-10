@@ -1,0 +1,22 @@
+.container,
+.container-fluid {
+    margin: 20px 0;
+}
+
+.box {
+    text-align: center;
+    margin: 1px;
+    background-color: #006cfa;
+    color: #fff;
+    min-height: 50px;
+    padding: 15px;
+}
+
+.box .box {
+    background-color: #00e165;
+    margin: 1px;
+}
+
+.box.box-double {
+    min-height: 100px;
+}
