@@ -1,5 +1,5 @@
 :root {
-    --unit: 1.8vw;
+    --unit: 1.5vw;
     --side: calc(var(--unit) * 24 + var(--unit));
 }
 
