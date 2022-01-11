@@ -1,0 +1,215 @@
+:root {
+    --unit: 3.5vw;
+    --width: calc(var(--unit) * 7);
+    --height: calc(var(--unit) * 13);
+    --uiwidth: calc(var(--unit) * 5.7);
+    --uiheight: calc(var(--unit) * 10);
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size {
+    display: none;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.phone {
+    width: var(--width);
+    height: var(--height);
+    background-color: #dcdb11;
+    padding: 1%;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: black;
+    position: relative;
+}
+
+.logo {
+    padding: 5px;
+    width: 100%;
+}
+
+.camera {
+    height: 20px;
+    width: 20px;
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lens {
+    height: 12px;
+    width: 12px;
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bar {
+    margin: 5px 5%;
+}
+
+.ui {
+    width: var(--uiwidth);
+    height: var(--uiheight);
+    margin: auto;
+    overflow: auto;
+    overflow-y: overlay;
+    position: relative;
+}
+
+.ui::-webkit-scrollbar {
+    width: 5px;
+}
+
+.ui::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ui::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 100vw;
+}
+
+.ui .row {
+    height: calc(var(--uiwidth) / 3);
+}
+
+.ui .row.double {
+    height: calc(var(--uiwidth) / 1.5);
+}
+
+
+.ui .column {
+    height: 100%;
+}
+
+.box {
+    margin: auto;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #E3C800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    font-size: 2.5vw;
+    position: relative;
+}
+
+.box.big {
+    font-size: 5.5vw;
+}
+
+.box:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+.label {
+    position: absolute;
+    bottom: 0.3ch;
+    left: 0.3ch;
+    font-size: 0.4em;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meteo {
+    text-align: center;
+    flex-direction: column;
+    font-size: 1vw;
+    background-color: #2f55a4;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    justify-content: space-around;
+}
+
+
+.meteo-icon {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.mail {
+    text-align: center;   
+}
+
+.meteo:hover {
+    background-color: #3b5998;
+}
+
+#twitter {
+    background-color: #1DA1F2;
+}
+
+#skype {
+    background-color: #00aff0;
+}
+
+#facebook {
+    background-color: #3b5998;
+}
+
+#instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+#twitter:hover,#skype:hover {
+    background-color: #008abe;
+}
+
+#facebook:hover {
+    background-color: #2f477a;
+}
+
+.nav {
+    padding: 10px 0;
+    text-align: center;
+    color: gray;
+}
+
+.nav .col-4:hover {
+    color: #fff;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 834px) {
+    .size {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+}
